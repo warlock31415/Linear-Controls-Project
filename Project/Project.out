@@ -1,0 +1,21 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{Literature Review}{}% 2
+\BOOKMARK [1][-]{section.3}{Code and system}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Part I}{section.3}% 4
+\BOOKMARK [3][-]{subsubsection.3.1.1}{Check the Controllabilty:}{subsection.3.1}% 5
+\BOOKMARK [3][-]{subsubsection.3.1.2}{Check the Observability:}{subsection.3.1}% 6
+\BOOKMARK [3][-]{subsubsection.3.1.3}{Regions of Control}{subsection.3.1}% 7
+\BOOKMARK [2][-]{subsection.3.2}{Part II}{section.3}% 8
+\BOOKMARK [3][-]{subsubsection.3.2.1}{Kalman Decomposition}{subsection.3.2}% 9
+\BOOKMARK [3][-]{subsubsection.3.2.2}{Results:}{subsection.3.2}% 10
+\BOOKMARK [3][-]{subsubsection.3.2.3}{Checking the Results}{subsection.3.2}% 11
+\BOOKMARK [3][-]{subsubsection.3.2.4}{Conclusion for Part II}{subsection.3.2}% 12
+\BOOKMARK [2][-]{subsection.3.3}{Part III}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Root-locus}{subsection.3.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Pole Placement using Matlab}{subsection.3.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Pole Placement using Ackermann's formula}{subsection.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.4}{Part IV}{section.3}% 17
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Step response}{subsection.3.4}% 18
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Rootlocus of the desired system}{subsection.3.4}% 19
+\BOOKMARK [1][-]{section.4}{Conclusions}{}% 20
+\BOOKMARK [1][-]{section.5}{References}{}% 21
