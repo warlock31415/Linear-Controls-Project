@@ -46,7 +46,7 @@
     \fi
 
     \usepackage{fancyvrb} % verbatim replacement that allows latex
-    \usepackage{grffile} % extends the file name processing of package graphics 
+    \usepackage{grffile} % extends the file name processing of package graphics
                          % to support a larger range
     \makeatletter % fix for old versions of grffile with XeLaTeX
     \@ifpackagelater{grffile}{2019/11/01}
@@ -131,7 +131,7 @@
     \newcommand{\RegionMarkerTok}[1]{{#1}}
     \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
     \newcommand{\NormalTok}[1]{{#1}}
-    
+
     % Additional commands for more recent versions of Pandoc
     \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
     \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
@@ -150,8 +150,8 @@
     \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
     \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
     \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
-    
-    
+
+
     % Define a nice break command that doesn't care if a line doesn't already
     % exist.
     \def\br{\hspace*{\fill} \\* }
@@ -164,8 +164,8 @@
     \renewcommand{\LaTeX}{\textrm{\Oldlatex}}
     % Document parameters
     % Document title
-    \title{Linear Controls \\ Analysis of an Inverted Pendulum}
-    \author{Anoushka Mathews, Md Shahnewaz Tanvir ,Pratik Kunkolienker}
+    \title{Linear Controls: \\ Inverted Pendulum}
+    \author{Anoushka Mathews, \\Md Shahnewaz Tanvir, \\ Pratik Kunkolienker}
     
     
     
@@ -273,53 +273,53 @@
 \makeatother
 
 
-    % For linebreaks inside Verbatim environment from package fancyvrb. 
+    % For linebreaks inside Verbatim environment from package fancyvrb.
     \makeatletter
-        \newbox\Wrappedcontinuationbox 
-        \newbox\Wrappedvisiblespacebox 
-        \newcommand*\Wrappedvisiblespace {\textcolor{red}{\textvisiblespace}} 
-        \newcommand*\Wrappedcontinuationsymbol {\textcolor{red}{\llap{\tiny$\m@th\hookrightarrow$}}} 
-        \newcommand*\Wrappedcontinuationindent {3ex } 
-        \newcommand*\Wrappedafterbreak {\kern\Wrappedcontinuationindent\copy\Wrappedcontinuationbox} 
-        % Take advantage of the already applied Pygments mark-up to insert 
-        % potential linebreaks for TeX processing. 
-        %        {, <, #, %, $, ' and ": go to next line. 
-        %        _, }, ^, &, >, - and ~: stay at end of broken line. 
-        % Use of \textquotesingle for straight quote. 
-        \newcommand*\Wrappedbreaksatspecials {% 
-            \def\PYGZus{\discretionary{\char`\_}{\Wrappedafterbreak}{\char`\_}}% 
-            \def\PYGZob{\discretionary{}{\Wrappedafterbreak\char`\{}{\char`\{}}% 
-            \def\PYGZcb{\discretionary{\char`\}}{\Wrappedafterbreak}{\char`\}}}% 
-            \def\PYGZca{\discretionary{\char`\^}{\Wrappedafterbreak}{\char`\^}}% 
-            \def\PYGZam{\discretionary{\char`\&}{\Wrappedafterbreak}{\char`\&}}% 
-            \def\PYGZlt{\discretionary{}{\Wrappedafterbreak\char`\<}{\char`\<}}% 
-            \def\PYGZgt{\discretionary{\char`\>}{\Wrappedafterbreak}{\char`\>}}% 
-            \def\PYGZsh{\discretionary{}{\Wrappedafterbreak\char`\#}{\char`\#}}% 
-            \def\PYGZpc{\discretionary{}{\Wrappedafterbreak\char`\%}{\char`\%}}% 
-            \def\PYGZdl{\discretionary{}{\Wrappedafterbreak\char`\$}{\char`\$}}% 
-            \def\PYGZhy{\discretionary{\char`\-}{\Wrappedafterbreak}{\char`\-}}% 
-            \def\PYGZsq{\discretionary{}{\Wrappedafterbreak\textquotesingle}{\textquotesingle}}% 
-            \def\PYGZdq{\discretionary{}{\Wrappedafterbreak\char`\"}{\char`\"}}% 
-            \def\PYGZti{\discretionary{\char`\~}{\Wrappedafterbreak}{\char`\~}}% 
-        } 
-        % Some characters . , ; ? ! / are not pygmentized. 
-        % This macro makes them "active" and they will insert potential linebreaks 
-        \newcommand*\Wrappedbreaksatpunct {% 
-            \lccode`\~`\.\lowercase{\def~}{\discretionary{\hbox{\char`\.}}{\Wrappedafterbreak}{\hbox{\char`\.}}}% 
-            \lccode`\~`\,\lowercase{\def~}{\discretionary{\hbox{\char`\,}}{\Wrappedafterbreak}{\hbox{\char`\,}}}% 
-            \lccode`\~`\;\lowercase{\def~}{\discretionary{\hbox{\char`\;}}{\Wrappedafterbreak}{\hbox{\char`\;}}}% 
-            \lccode`\~`\:\lowercase{\def~}{\discretionary{\hbox{\char`\:}}{\Wrappedafterbreak}{\hbox{\char`\:}}}% 
-            \lccode`\~`\?\lowercase{\def~}{\discretionary{\hbox{\char`\?}}{\Wrappedafterbreak}{\hbox{\char`\?}}}% 
-            \lccode`\~`\!\lowercase{\def~}{\discretionary{\hbox{\char`\!}}{\Wrappedafterbreak}{\hbox{\char`\!}}}% 
-            \lccode`\~`\/\lowercase{\def~}{\discretionary{\hbox{\char`\/}}{\Wrappedafterbreak}{\hbox{\char`\/}}}% 
+        \newbox\Wrappedcontinuationbox
+        \newbox\Wrappedvisiblespacebox
+        \newcommand*\Wrappedvisiblespace {\textcolor{red}{\textvisiblespace}}
+        \newcommand*\Wrappedcontinuationsymbol {\textcolor{red}{\llap{\tiny$\m@th\hookrightarrow$}}}
+        \newcommand*\Wrappedcontinuationindent {3ex }
+        \newcommand*\Wrappedafterbreak {\kern\Wrappedcontinuationindent\copy\Wrappedcontinuationbox}
+        % Take advantage of the already applied Pygments mark-up to insert
+        % potential linebreaks for TeX processing.
+        %        {, <, #, %, $, ' and ": go to next line.
+        %        _, }, ^, &, >, - and ~: stay at end of broken line.
+        % Use of \textquotesingle for straight quote.
+        \newcommand*\Wrappedbreaksatspecials {%
+            \def\PYGZus{\discretionary{\char`\_}{\Wrappedafterbreak}{\char`\_}}%
+            \def\PYGZob{\discretionary{}{\Wrappedafterbreak\char`\{}{\char`\{}}%
+            \def\PYGZcb{\discretionary{\char`\}}{\Wrappedafterbreak}{\char`\}}}%
+            \def\PYGZca{\discretionary{\char`\^}{\Wrappedafterbreak}{\char`\^}}%
+            \def\PYGZam{\discretionary{\char`\&}{\Wrappedafterbreak}{\char`\&}}%
+            \def\PYGZlt{\discretionary{}{\Wrappedafterbreak\char`\<}{\char`\<}}%
+            \def\PYGZgt{\discretionary{\char`\>}{\Wrappedafterbreak}{\char`\>}}%
+            \def\PYGZsh{\discretionary{}{\Wrappedafterbreak\char`\#}{\char`\#}}%
+            \def\PYGZpc{\discretionary{}{\Wrappedafterbreak\char`\%}{\char`\%}}%
+            \def\PYGZdl{\discretionary{}{\Wrappedafterbreak\char`\$}{\char`\$}}%
+            \def\PYGZhy{\discretionary{\char`\-}{\Wrappedafterbreak}{\char`\-}}%
+            \def\PYGZsq{\discretionary{}{\Wrappedafterbreak\textquotesingle}{\textquotesingle}}%
+            \def\PYGZdq{\discretionary{}{\Wrappedafterbreak\char`\"}{\char`\"}}%
+            \def\PYGZti{\discretionary{\char`\~}{\Wrappedafterbreak}{\char`\~}}%
+        }
+        % Some characters . , ; ? ! / are not pygmentized.
+        % This macro makes them "active" and they will insert potential linebreaks
+        \newcommand*\Wrappedbreaksatpunct {%
+            \lccode`\~`\.\lowercase{\def~}{\discretionary{\hbox{\char`\.}}{\Wrappedafterbreak}{\hbox{\char`\.}}}%
+            \lccode`\~`\,\lowercase{\def~}{\discretionary{\hbox{\char`\,}}{\Wrappedafterbreak}{\hbox{\char`\,}}}%
+            \lccode`\~`\;\lowercase{\def~}{\discretionary{\hbox{\char`\;}}{\Wrappedafterbreak}{\hbox{\char`\;}}}%
+            \lccode`\~`\:\lowercase{\def~}{\discretionary{\hbox{\char`\:}}{\Wrappedafterbreak}{\hbox{\char`\:}}}%
+            \lccode`\~`\?\lowercase{\def~}{\discretionary{\hbox{\char`\?}}{\Wrappedafterbreak}{\hbox{\char`\?}}}%
+            \lccode`\~`\!\lowercase{\def~}{\discretionary{\hbox{\char`\!}}{\Wrappedafterbreak}{\hbox{\char`\!}}}%
+            \lccode`\~`\/\lowercase{\def~}{\discretionary{\hbox{\char`\/}}{\Wrappedafterbreak}{\hbox{\char`\/}}}%
             \catcode`\.\active
-            \catcode`\,\active 
+            \catcode`\,\active
             \catcode`\;\active
             \catcode`\:\active
             \catcode`\?\active
             \catcode`\!\active
-            \catcode`\/\active 
-            \lccode`\~`\~ 	
+            \catcode`\/\active
+            \lccode`\~`\~
         }
     \makeatother
 
@@ -342,10 +342,10 @@
             \discretionary{\copy\Wrappedvisiblespacebox}{\Wrappedafterbreak}
             {\kern\fontdimen2\font}%
         }%
-        
+
         % Allow breaks at special characters using \PYG... macros.
         \Wrappedbreaksatspecials
-        % Breaks at punctuation characters . , ; ? ! and / need catcode=\active 	
+        % Breaks at punctuation characters . , ; ? ! and / need catcode=\active
         \OriginalVerbatim[#1,codes*=\Wrappedbreaksatpunct]%
     }
     \makeatother
@@ -355,7 +355,7 @@
     \definecolor{outcolor}{HTML}{D84315}
     \definecolor{cellborder}{HTML}{CFCFCF}
     \definecolor{cellbackground}{HTML}{F7F7F7}
-    
+
     % prompt
     \makeatletter
     \newcommand{\boxspacing}{\kern\kvtcb@left@rule\kern\kvtcb@boxsep}
@@ -367,7 +367,7 @@
 
     
     % Prevent overflowing lines due to hard-to-break entities
-    \sloppy 
+    \sloppy
     % Setup hyperref package
     \hypersetup{
       breaklinks=true,  % so long urls are correctly broken across lines
@@ -389,9 +389,11 @@
     \tableofcontents
     \newpage
     
-    
 
     
+
+
+
 \section{Introduction}\label{introduction}
 
 An inverted pendulum is a system where a mass is rigidly attached to a
@@ -405,16 +407,30 @@ The system is shown in Figure 1
 \caption{Inverted Pendulum}
 \end{figure}
 
-In this work, we will look at the properties of the system and check to
-see if the system can be made controllable by either using Kalman
-decomposition or pole placement
+\section{Problem Statement}\label{problem-statement}
+
+Experiment with Inverted Pendulum System to:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Establish its controllability, observability and stability.
+\item
+  Use the method of Kalman Decomposition to generate a controllable
+  system.
+\item
+  Use Constant Gain Negative Feedback method to generate a stable
+  system.
+\item
+  Visualize roots using Root Locus.
+\end{enumerate}
 
 \section{Literature Review}\label{literature-review}
 
 The course textbook {[}1{]} describes the mathematics in deriving the
 state space equations that represent the system. The equations for the
-system are given by: 
-\[
+system are given by: \[
 \begin{bmatrix}
     \dot{x_1}(t)\\
     \dot{x_2}(t)\\
@@ -433,20 +449,18 @@ system are given by:
     \end{bmatrix} + \begin{bmatrix}
     0 \\ \frac{1}{M} \\ 0 \\ \frac{-1}{Ml}
     \end{bmatrix} u(t) 
- \]\[   \\
+    \]\[
     y(t) = \begin{bmatrix}
     1 & 0 & 0 & 0
     \end{bmatrix}\mathbf{x}(t)
-\]
-
-where $ x_1(t) = y(t), x_2(t)=\dot{y}(t),x_3(t) =\theta(t),
-\mathrm{and\ } x_4(t)=\dot{\theta}(t)$. As the goal of the system is
+\] where $ x\_1(t) = y(t), x\_2(t)=\dot{y}(t),x\_3(t) =\theta(t),
+\mathrm{and\ } x\_4(t)=\dot{\theta}(t)$. As the goal of the system is
 to maintain the attached mass in an upright postion, these equations are
 only valid for \(\theta \rightarrow 0\). Furthermore, the output is only
 set to the distance, \(y\), the cart needs to move from the starting
 point.
 
-A more realistic model is given in {[}2{]}. This model accounts for
+    A more realistic model is given in {[}2{]}. This model accounts for
 friction between the cart wheels and the ground.
 
 \[
@@ -467,29 +481,26 @@ friction between the cart wheels and the ground.
     x_4 \\
     \end{bmatrix}+ \begin{bmatrix}
     0 \\ \frac{I+ml^2}{I(M+m)+Mml^2} \\ 0 \\ \frac{ml}{I(M+m)+Mml^2}
-    \end{bmatrix} u(t) 
-    \]\[
+\end{bmatrix} u(t) \]\[
     y(t) = \begin{bmatrix}
     1 & 0 & 0 & 0\\
     0 & 0 & 1 & 0
     \end{bmatrix}\mathbf{x}(t)
-\]
-where, $I$ is the moment of inertia of the pendulum and $\mu$ is
+\] where, \(I\) is the moment of inertia of the pendulum and \(\mu\) is
 the coefficient of friction between the ground and the cart's wheels.
 
 For analysis, the first model is chosen for its simplicity
 
-\section{Code and system}\label{code-and-system}
-
-\subsection{Part I}\label{part-i}
+\section{Part I}\label{part-i}
 
 \textbf{\emph{Set the Parameters to ensure the system is controllable
 and observable. Prove the system is controllable and observable for the
-chosen paparmeters.}}
+chosen parameters.}}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{1}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} We first import all the necessary libraries }
 \PY{k+kn}{from} \PY{n+nn}{control} \PY{k+kn}{import} \PY{o}{*}
 \PY{k+kn}{import} \PY{n+nn}{numpy} \PY{k}{as} \PY{n+nn}{np}
 \PY{c+c1}{\PYZsh{}\PYZpc{}matplotlib}
@@ -504,16 +515,21 @@ chosen paparmeters.}}
 \end{Verbatim}
 \end{tcolorbox}
 
-    Set parameters for the inverted pendulum: Let 
+    For this first part, we will pick some usual values for our parameters:
+m (mass of the pendulum), M (mass of the robot), l (length of the rod
+connecting the pendulum and the robot), g (gravity)\\
 \[
 	g = 9.8 \mathrm{\ m/s^2} \]\[
 	M = 2 \mathrm{\ kg} \]\[
 	m = 1 \mathrm{\ kg} \]\[
-    l = 0.5 \mathrm{\ m}
+	l = 0.5 \mathrm{\ m}\]\[
 \]
 
+In the code below, we also set our matrices evaluated at the above
+values.
+
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{34}{\boxspacing}
+\prompt{In}{incolor}{2}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{m} \PY{o}{=} \PY{l+m+mi}{1} \PY{c+c1}{\PYZsh{} mass of the pendulum.}
 \PY{n}{M} \PY{o}{=} \PY{l+m+mi}{2} \PY{c+c1}{\PYZsh{} mass of the cart.}
@@ -524,47 +540,56 @@ chosen paparmeters.}}
 \PY{n}{B} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{o}{/}\PY{n}{M}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{o}{/}\PY{p}{(}\PY{n}{M}\PY{o}{*}\PY{n}{l}\PY{p}{)}\PY{p}{]}\PY{p}{]}\PY{p}{)} \PY{c+c1}{\PYZsh{}B is an input matrix.}
 \PY{n}{C} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{)} \PY{c+c1}{\PYZsh{}C is an Output matrix.}
 \PY{n}{D} \PY{o}{=} \PY{l+m+mi}{0} \PY{c+c1}{\PYZsh{}D is a Transmission matrix}
-\PY{n}{B}
 \end{Verbatim}
 \end{tcolorbox}
 
-            \begin{tcolorbox}[breakable, size=fbox, boxrule=.5pt, pad at break*=1mm, opacityfill=0]
-\prompt{Out}{outcolor}{34}{\boxspacing}
-\begin{Verbatim}[commandchars=\\\{\}]
-array([[ 0. ],
-       [ 0.5],
-       [ 0. ],
-       [-1. ]])
-\end{Verbatim}
-\end{tcolorbox}
-        
-\subsubsection{Check the Controllabilty:}\label{check-the-controllabilty}
+\subsection{Check the Controllabilty:}\label{check-the-controllabilty}
+
+In the code below, we get the controllability matrix using the
+\texttt{ctrb()} from the python controls library. We then check the rank
+of this controllability matrix. If the rank is full, the system is
+controllable.
+
+Here, our controllability matrix is a square matrix. So, we can also
+check its determinant. If the determinant is non-zero, the system is
+controllable.
+
+From the results shown below, we can see that the matrix has a non-zero
+determinant.
+
+Hence, from the observations, we can conclude that the system with the
+above state parameters is controllable.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{3}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{Co} \PY{o}{=} \PY{n}{ctrb}\PY{p}{(}\PY{n}{A}\PY{p}{,}\PY{n}{B}\PY{p}{)}                          \PY{c+c1}{\PYZsh{} Get the controlabillity matrix}
+\PY{n}{Co} \PY{o}{=} \PY{n}{ctrb}\PY{p}{(}\PY{n}{A}\PY{p}{,}\PY{n}{B}\PY{p}{)}                          \PY{c+c1}{\PYZsh{} Get the controllability matrix}
 \PY{n}{rows}\PY{p}{,}\PY{n}{columns} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{shape}\PY{p}{(}\PY{n}{Co}\PY{p}{)}
 \PY{n}{R1} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{linalg}\PY{o}{.}\PY{n}{matrix\PYZus{}rank}\PY{p}{(}\PY{n}{Co}\PY{p}{)}          \PY{c+c1}{\PYZsh{} Get the rank of the controllability matrix}
 \PY{k}{if} \PY{n}{R1} \PY{o}{==} \PY{n}{rows} \PY{p}{:}                         \PY{c+c1}{\PYZsh{} Check if matrix has full row rank }
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{System is Controllable.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Rank of the controllability matrix is full. So the system is Controllable.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
     \PY{n}{de1} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{linalg}\PY{o}{.}\PY{n}{det}\PY{p}{(}\PY{n}{Co}\PY{p}{)}
-    \PY{n+nb}{print}\PY{p}{(}\PY{n}{de1}\PY{p}{)} 
+    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The determinant of the matrix is:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n+nb}{round}\PY{p}{(}\PY{n}{de1}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)} 
 \PY{k}{else}\PY{p}{:}
     \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{System is not Controllable}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-System is Controlable.
-96.2361
+Rank of the controllability matrix is full. So the system is Controllable.
+The determinant of the matrix is: 96.24
     \end{Verbatim}
 
-    As can be seen, the system is controllabe since the controllability
+    As can be seen, the system is controllable since the controllability
 matrix \(\mathcal{C}_o\) has full row rank. Further, the determinant of
 matrix \(\mathcal{C}_o\) is non zero.
 
-\subsubsection{Check the Observability:}\label{check-the-observability}
+\subsection{Check the Observability:}\label{check-the-observability}
+
+In the code below, we will use the ``obsv()'' function from the python
+controls library. Here, we check the rank of the observability matrix
+returned by the function. We then also check its determinant for
+non-singularity.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{4}{\boxspacing}
@@ -573,34 +598,54 @@ matrix \(\mathcal{C}_o\) is non zero.
 \PY{n}{rows}\PY{p}{,}\PY{n}{columns} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{shape}\PY{p}{(}\PY{n}{Obs}\PY{p}{)}
 \PY{n}{R2}\PY{o}{=}\PY{n}{np}\PY{o}{.}\PY{n}{linalg}\PY{o}{.}\PY{n}{matrix\PYZus{}rank}\PY{p}{(}\PY{n}{Obs}\PY{p}{)}      \PY{c+c1}{\PYZsh{} Get the rank of the observability matrix}
 \PY{k}{if} \PY{n}{R2} \PY{o}{==} \PY{n}{rows}\PY{p}{:}                     \PY{c+c1}{\PYZsh{} Check if matrix has full row rank}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{System is observable.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The rank of the observability matrix is full. So the system is observable.}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
     \PY{n}{de2} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{linalg}\PY{o}{.}\PY{n}{det}\PY{p}{(}\PY{n}{Obs}\PY{p}{)}
-    \PY{n+nb}{print}\PY{p}{(}\PY{n}{de2}\PY{p}{)} 
+    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{The determinant of the matrix is:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n+nb}{round}\PY{p}{(}\PY{n}{de2}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}\PY{p}{)} 
 \PY{k}{else}\PY{p}{:}
-    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{System is not observable}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
+    \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{System is not Observable}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{Verbatim}[commandchars=\\\{\}]
-System is observable.
-24.059025000000005
+The rank of the observability matrix is full. So the system is observable.
+The determinant of the matrix is: 24.06
     \end{Verbatim}
 
-    The system is observable as well. The observability matrix
-\(\mathcal{O}\) is also full rank. Further, the determinant of matrix
-\(\mathcal{O}\) is non zero.
+    We can see that the system is observable as well. The observability
+matrix \(\mathcal{O}\) is also full rank. Further, the determinant of
+matrix \(\mathcal{O}\) is non zero.
 
-\subsubsection{Regions of Control}\label{regions-of-control}
+\subsubsection{So with the above parameters, the system is controllable
+and
+observable.}\label{so-with-the-above-parameters-the-system-is-controllable-and-observable.}
 
-The matrix may be controllable and observable for the given values. But
-to check for values that the system might not be controllable or
-observable, we can solve for the determinant algebraicly. If the
-determinant of a matrix is non zero, it can be shown that the rank of
-the matrix is less than full rank.
+\subsection{Symbolic Regions of Controllability and
+Observability}\label{symbolic-regions-of-controllability-and-observability}
+
+The matrix is controllable and observable for the above selected
+numerical values. In this section we will, try to find a more generic
+picture of where the system is controllable and where the system is
+observable.
+
+By solving for the determinant of the controllability matrix, we can
+check for controllability and the same goes for the observability
+matrix. This is true only because our controllability matrix and
+observability matrix are square matrices. We recall that if the
+determinant of a square matrix is non zero, it can be shown that the
+rank of the matrix is full.
+
+The goal in this section is to find regions where the system will not be
+controllable and will not be observable given the state space equations.
+
+In the code below, we will first define the symbolic matrices. Then we
+will define the symbolic controllability matrix, then we will calculate
+its determinant symbolically. We will, then, repeat the same process for
+the observability matrix.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{5}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Defining our matrices symbolically. }
 \PY{n}{M}\PY{p}{,}\PY{n}{m}\PY{p}{,}\PY{n}{l} \PY{o}{=} \PY{n}{sym}\PY{o}{.}\PY{n}{symbols}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{M m l}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 
 \PY{n}{A} \PY{o}{=} \PY{n}{sym}\PY{o}{.}\PY{n}{Matrix}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{n}{m}\PY{o}{*}\PY{n}{g}\PY{p}{)}\PY{o}{/}\PY{n}{M}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{p}{(}\PY{n}{M}\PY{o}{+}\PY{n}{m}\PY{p}{)}\PY{o}{*}\PY{n}{g}\PY{o}{/}\PY{p}{(}\PY{n}{M}\PY{o}{*}\PY{n}{l}\PY{p}{)}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{]}\PY{p}{)} \PY{c+c1}{\PYZsh{}A is a system matrix.}
@@ -610,8 +655,8 @@ the matrix is less than full rank.
 \end{Verbatim}
 \end{tcolorbox}
 
-    Since we're doing this algebraicly, we need to manually make the
-controllability and observability matrix. and find the determinant
+    Since we're doing this symbolically, we manually make the
+controllability and observability matrix and find the determinant
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{6}{\boxspacing}
@@ -632,8 +677,17 @@ controllability and observability matrix. and find the determinant
 
     
 
-    This shows that the system is un-controllable for values of
-\(M \ \mathrm{and}\  l \rightarrow \infty\)
+    As we can see,  the symbolic determinant of the controllability
+matrix can only be 0 when either \(M \rightarrow \infty\), or
+\(l \rightarrow \infty\) or both. In all other cases, the controllability matrix
+is non-zero.
+
+The figure below depicts the region of controllability with respect to
+the mass of the robot and the length of the rod. We can see that the
+region is quite small.
+
+    Next, we will do the same for the observability matrix. We will create
+the observability matrix manually, and then find its determinant.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
 \prompt{In}{incolor}{7}{\boxspacing}
@@ -655,9 +709,12 @@ controllability and observability matrix. and find the determinant
     
 
     This shows that the system is un-observable for values of
-\(M \rightarrow \infty\) or \(m = 0\)
+\(M \rightarrow \infty\) or \(m = 0\) For all other values, the system
+is observable. The image below depicts that this region of
+un-observability is actually a parabola with asymptotes coming out of
+the page.
 
-\subsection{Part II}\label{part-ii}
+\section{Part II}\label{part-ii}
 
 \textbf{\emph{Set the parameters to create an ``uncontrollable'' form
 and use Kalman Decomposition to obtain the controllable form.}}
@@ -688,7 +745,15 @@ the controllability matrix of the given system.
                \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{o}{/}\PY{p}{(}\PY{n}{M}\PY{o}{*}\PY{n}{l}\PY{p}{)}\PY{p}{]}\PY{p}{]}\PY{p}{)}
 
 \PY{n}{C} \PY{o}{=} \PY{n}{sym}\PY{o}{.}\PY{n}{Matrix}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{,} \PY{l+m+mi}{0}\PY{p}{]}\PY{p}{]}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
 
+    The following section of code is a helper function that returns true if
+a value is a floating point number.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{9}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{} This function returns True if the parameter num is a float. False, otherwise.}
 \PY{k}{def} \PY{n+nf}{isfloat}\PY{p}{(}\PY{n}{num}\PY{p}{)}\PY{p}{:}
     \PY{k}{try}\PY{p}{:}
@@ -696,7 +761,27 @@ the controllability matrix of the given system.
         \PY{k}{return} \PY{k+kc}{True}
     \PY{k}{except} \PY{n+ne}{ValueError}\PY{p}{:}
         \PY{k}{return} \PY{k+kc}{False}
+\end{Verbatim}
+\end{tcolorbox}
 
+\subsection{Controllability Matrix of the
+System}\label{controllability-matrix-of-the-system}
+
+The following section of code is a function that takes in a symbolic
+matrix and returns the controllability matrix and a boolean value. The
+boolean value is true when the system is controllable and false
+otherwise.
+
+Using this function, we can see what the controllability matrix of the
+given system looks like. We can see that the rank of this matrix is
+full, no matter what values we pick for the parameters theoretically.
+However, with enough rounding it is possible to make the controllability
+be less than full rank. This rounding translates to the limited
+precision we can get using sensor measurements.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{10}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{} This function returns whether or not a particular matrix is controllable. The matrices must only be symbolic matrices. }
 \PY{c+c1}{\PYZsh{} It also returns the controllability matrix. }
 \PY{k}{def} \PY{n+nf}{controllable\PYZus{}sym}\PY{p}{(}\PY{n}{A}\PY{p}{,} \PY{n}{B}\PY{p}{,} \PY{n}{dim}\PY{o}{=}\PY{l+m+mi}{4}\PY{p}{)}\PY{p}{:}
@@ -720,26 +805,29 @@ the controllability matrix of the given system.
 \end{tcolorbox}
  
             
-\prompt{Out}{outcolor}{8}{}
+\prompt{Out}{outcolor}{10}{}
     
     $\displaystyle \left[\begin{matrix}0 & \frac{1}{M} & 0 & \frac{g m}{M^{2} l}\\\frac{1}{M} & 0 & \frac{g m}{M^{2} l} & 0\\0 & - \frac{1}{M l} & 0 & - \frac{g \left(M + m\right)}{M^{2} l^{2}}\\- \frac{1}{M l} & 0 & - \frac{g \left(M + m\right)}{M^{2} l^{2}} & 0\end{matrix}\right]$
 
     
 
-    The goal now is to make column 1 equal to column 3. (1 indexed)
+\subsection{Uncontrollable System}\label{uncontrollable-system}
 
-We can to by the following 2 rules:
+The goal now is to make an uncontrollable system. We will make column 1
+equal to column 3. (1 indexed). We can do this by following the 2 rules:
 
-\[ 
- m >>> M \]\[
- M = \frac{gm}{l}
-\]
+\[ m >>> M \]
 
-In the following code, we will define the variables according to the
-above rules and verify that this new system is, in fact, uncontrollable.
+\[ M = \frac{g*m}{l} \]
+
+In the following code section, we will define another function that can
+take numerical matrices and return the controllability matrix and a
+boolean value describing whether the system is controllable. Then, we
+will define the variables according to the above rules and verify that
+this new system is, in fact, uncontrollable.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{9}{\boxspacing}
+\prompt{In}{incolor}{11}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{} This function checks to see if a numerical matrix consisting of floats is controllable. }
 \PY{c+c1}{\PYZsh{} It returns the boolean value along with the controllability matrix. }
@@ -760,7 +848,12 @@ above rules and verify that this new system is, in fact, uncontrollable.
         \PY{k}{return} \PY{k+kc}{True}\PY{p}{,} \PY{n}{cols}
     \PY{k}{else}\PY{p}{:}
         \PY{k}{return} \PY{k+kc}{False}\PY{p}{,} \PY{n}{cols}
+\end{Verbatim}
+\end{tcolorbox}
 
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{12}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{calc\PYZus{}m} \PY{o}{=} \PY{l+m+mi}{10000}
 \PY{n}{calc\PYZus{}g} \PY{o}{=} \PY{l+m+mf}{9.8}
 \PY{n}{calc\PYZus{}l} \PY{o}{=} \PY{l+m+mi}{9900}
@@ -772,7 +865,12 @@ above rules and verify that this new system is, in fact, uncontrollable.
 \PY{n}{new\PYZus{}C} \PY{o}{=} \PY{n}{C}\PY{o}{.}\PY{n}{evalf}\PY{p}{(}\PY{n}{subs}\PY{o}{=}\PY{p}{\PYZob{}}\PY{n}{m}\PY{p}{:}\PY{n}{calc\PYZus{}m}\PY{p}{,} \PY{n}{M}\PY{p}{:}\PY{n}{calc\PYZus{}M}\PY{p}{,} \PY{n}{l}\PY{p}{:}\PY{n}{calc\PYZus{}l} \PY{p}{,} \PY{n}{g}\PY{p}{:}\PY{n}{calc\PYZus{}g}\PY{p}{\PYZcb{}}\PY{p}{)}
 
 \PY{n}{new\PYZus{}controllable}\PY{p}{,} \PY{n}{new\PYZus{}cont\PYZus{}matrix} \PY{o}{=} \PY{n}{controllable}\PY{p}{(}\PY{n}{new\PYZus{}A}\PY{p}{,} \PY{n}{new\PYZus{}B}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
 
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{13}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
 \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{controllable?}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{new\PYZus{}controllable}\PY{p}{)}
 
 \PY{c+c1}{\PYZsh{} display the new controllability matrix }
@@ -785,14 +883,14 @@ controllable? False
     \end{Verbatim}
  
             
-\prompt{Out}{outcolor}{9}{}
+\prompt{Out}{outcolor}{13}{}
     
     $\displaystyle \left[\begin{matrix}0 & 0.1 & 0 & 0.1\\0.1 & 0 & 0.1 & 0\\0 & 0 & 0 & 0\\0 & 0 & 0 & 0\end{matrix}\right]$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{10}{\boxspacing}
+\prompt{In}{incolor}{14}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Rank of the above Controllable Matrix:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{new\PYZus{}cont\PYZus{}matrix}\PY{o}{.}\PY{n}{rank}\PY{p}{(}\PY{p}{)}\PY{p}{)}
 \end{Verbatim}
@@ -802,7 +900,7 @@ controllable? False
 Rank of the above Controllable Matrix: 2
     \end{Verbatim}
 
-\subsubsection{Kalman Decomposition}\label{kalman-decomposition}
+\subsection{Kalman Decomposition}\label{kalman-decomposition}
 
 Since the rank of this new matrix is 2 (less than 4), the new system is
 not controllable. We can make it controllable using the method of Kalman
@@ -819,33 +917,45 @@ Decomposition. Let's understand the Kalman Decomposition Process.
   of the 2 vectors we get from the controllability matrix.
 
   \[Q = \begin{bmatrix} 0 & 0.1 & 0 & 0 \\ 0.1 & 0 & 0 & 0 \\ 0 & 0 & 1 & 0\\ 0 & 0 & 0 & 1 \end{bmatrix}\]
+\end{enumerate}
+
+    \begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\setcounter{enumi}{1}
 \item
   Find P
 
   \[ P = Q^{-1} \]
 \item
-  Find $ \bar{A} $ , $ \bar{B} $, $ \bar{C} $ with the
+  Find $ \bar\{A\}  ,  \bar\{B\} ,  \bar\{C\} $ with the
   following formulae:
 
   \[ \bar{A} = PAP^{-1} \] \[ \bar{B} = PB \] \[ \bar{C} = CP^{-1} \]
 \item
-  Finally, we pick the 2x2 top left of $ \bar{A} $ (2x2 because A is
+  Finally, we pick the 2x2 top left of $ \bar\{A\} $ (2x2 because A is
   a square matrix and the rank of our original controllability matrix
-  was 2) and name it $ A_c $. We pick 2x1 of the $ \bar{B} $ and
-  name it $ B_c $. And we pick 1x2 of the $ \bar{C} $ and name it
-  $ C_c $
+  was 2) and name it \$ A\_c \$. We pick 2x1 of the $ \bar\{B\} $ and
+  name it \$ B\_c \$. And we pick 1x2 of the $ \bar\{C\} $ and name it
+  \$ C\_c \$
 \end{enumerate}
 
-These new matrices that we found, $ A_c $, $ B_c $, $ C_c $,
+These new matrices that we found, \$ A\_c \$, \$ B\_c \$, \$ C\_c \$,
 make up the new representation of the system that is controllable. Now
 that we've got the theory down, let's code it up and see the results.
 
 \[ \dot{x} = A_c x(t) + B_c u(t) \] \[ y = C_c x(t) \]
 
+In the following code, we will make a function that will calculate the
+nullspace given some vectors in a matrix. Then, the function will append
+the nullspace of the matrix to the matrix. We also have another function
+that performs the kalman decomposition on matrix A and B and returns the
+controllable system matrices Ac, Bc, and Cc.
+
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{11}{\boxspacing}
+\prompt{In}{incolor}{15}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{c+c1}{\PYZsh{} This function find the nullspace of the passed in matrix and adds the nullspace to the matrix. This new matrix is now invertible. }
+\PY{c+c1}{\PYZsh{} This function find the nullspace of the passed in matrix and adds the nullspace to the matrix. }
+\PY{c+c1}{\PYZsh{} This new matrix is now invertible. }
 \PY{k}{def} \PY{n+nf}{fill\PYZus{}square\PYZus{}with\PYZus{}identity}\PY{p}{(}\PY{n}{A}\PY{p}{)}\PY{p}{:}
     \PY{n}{row}\PY{p}{,} \PY{n}{col} \PY{o}{=} \PY{n}{sym}\PY{o}{.}\PY{n}{shape}\PY{p}{(}\PY{n}{A}\PY{p}{)}
     
@@ -863,12 +973,17 @@ that we've got the theory down, let's code it up and see the results.
         \PY{k}{else}\PY{p}{:}
            \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{something went wrong}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
            \PY{k}{return} \PY{k+kc}{False}
-        
-    
-\PY{c+c1}{\PYZsh{} This function performs the Kalman Decomposition using the passed in matrices. It returns the controllable matrices, namely Ac, Bc and Cc. }
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{16}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} This function performs the Kalman Decomposition using the passed in matrices. }
+\PY{c+c1}{\PYZsh{} It returns the controllable matrices, namely Ac, Bc and Cc. }
 \PY{k}{def} \PY{n+nf}{kalman\PYZus{}decomposition}\PY{p}{(}\PY{n}{A}\PY{p}{,} \PY{n}{B}\PY{p}{,} \PY{n}{controllability\PYZus{}matrix}\PY{p}{)}\PY{p}{:}
     
-    \PY{n}{rank} \PY{o}{=} \PY{n}{controllability\PYZus{}matrix}\PY{o}{.}\PY{n}{rank}\PY{p}{(}\PY{p}{)}
+    \PY{n}{rank} \PY{o}{=} \PY{n}{controllability\PYZus{}matrix}\PY{o}{.}\PY{n}{rank}\PY{p}{(}\PY{p}{)} 
     \PY{c+c1}{\PYZsh{} assuming that rank is atleast 1}
     \PY{n}{Q} \PY{o}{=} \PY{n}{controllability\PYZus{}matrix}\PY{o}{.}\PY{n}{col}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{)}
     
@@ -894,7 +1009,15 @@ that we've got the theory down, let's code it up and see the results.
         \PY{k}{return} \PY{k+kc}{False}
         
     \PY{k}{return} \PY{n}{Ac}\PY{p}{,} \PY{n}{Bc}\PY{p}{,} \PY{n}{Cc}
+\end{Verbatim}
+\end{tcolorbox}
 
+    Now that we have our helper functions, we can use the kalman
+decomposition on the uncontrollable system to get a controllable system.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{17}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{Controllable\PYZus{}SS} \PY{o}{=} \PY{n}{kalman\PYZus{}decomposition}\PY{p}{(}\PY{n}{new\PYZus{}A}\PY{p}{,} \PY{n}{new\PYZus{}B}\PY{p}{,} \PY{n}{controllable}\PY{p}{(}\PY{n}{new\PYZus{}A}\PY{p}{,} \PY{n}{new\PYZus{}B}\PY{p}{)}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{)}
 
 \PY{k}{if}\PY{p}{(}\PY{p}{(}\PY{n}{Controllable\PYZus{}SS}\PY{p}{)}\PY{p}{)}\PY{p}{:}
@@ -906,12 +1029,13 @@ that we've got the theory down, let's code it up and see the results.
 \end{Verbatim}
 \end{tcolorbox}
 
-\subsubsection{Results:}\label{results}
+\subsection{Results:}\label{results}
 
-The following matrices are the results of the Kalman Decomposition:
+We can see that the Kalman Decomposition function did not fail. The
+following matrices are the results of the Kalman Decomposition:
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{12}{\boxspacing}
+\prompt{In}{incolor}{18}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Ac:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \PY{n}{Ac}
@@ -923,14 +1047,14 @@ Ac:
     \end{Verbatim}
  
             
-\prompt{Out}{outcolor}{12}{}
+\prompt{Out}{outcolor}{18}{}
     
     $\displaystyle \left[\begin{matrix}0 & 0\\0.999755859375 & 0\end{matrix}\right]$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{13}{\boxspacing}
+\prompt{In}{incolor}{19}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Bc:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \PY{n}{Bc}
@@ -942,14 +1066,14 @@ Bc:
     \end{Verbatim}
  
             
-\prompt{Out}{outcolor}{13}{}
+\prompt{Out}{outcolor}{19}{}
     
     $\displaystyle \left[\begin{matrix}1.01020408163265\\0\end{matrix}\right]$
 
     
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{14}{\boxspacing}
+\prompt{In}{incolor}{20}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Cc:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{)}
 \PY{n}{Cc}
@@ -961,20 +1085,45 @@ Cc:
     \end{Verbatim}
  
             
-\prompt{Out}{outcolor}{14}{}
+\prompt{Out}{outcolor}{20}{}
     
     $\displaystyle \left[\begin{matrix}0 & 0.1\end{matrix}\right]$
 
     
 
-\subsubsection{Checking the Results}\label{checking-the-results}
-
-Finally, we can now check the results by comparing the transfer function
-generated by our original uncontrollable state space system with the new
-controllable state space system.
+    We can now check if the newly formed system is controllable.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{15}{\boxspacing}
+\prompt{In}{incolor}{21}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{c+c1}{\PYZsh{} Checking the controllability of the newly generated system}
+\PY{n}{controllable}\PY{p}{,} \PY{n}{controllability\PYZus{}matrix} \PY{o}{=} \PY{n}{controllable}\PY{p}{(}\PY{n}{Ac}\PY{p}{,} \PY{n}{Bc}\PY{p}{,} \PY{l+m+mi}{2}\PY{p}{)}
+
+\PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{Is the newly generated system controllable?}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{controllable}\PY{p}{)}
+
+\PY{n}{controllability\PYZus{}matrix}
+\end{Verbatim}
+\end{tcolorbox}
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Is the newly generated system controllable? True
+    \end{Verbatim}
+ 
+            
+\prompt{Out}{outcolor}{21}{}
+    
+    $\displaystyle \left[\begin{matrix}1.01 & 0\\0 & 1.01\end{matrix}\right]$
+
+    
+
+\subsection{Checking the Results}\label{checking-the-results}
+
+Finally, we can now check the results by comparing the transfer function
+generated by our original uncontrollable state space system with the
+transfer function of the new controllable state space system.
+
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{22}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{uncontrollable system:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{ss2tf}\PY{p}{(}\PY{n}{new\PYZus{}A}\PY{p}{,} \PY{n}{new\PYZus{}B}\PY{p}{,} \PY{n}{new\PYZus{}C}\PY{p}{,} \PY{n}{sym}\PY{o}{.}\PY{n}{Matrix}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PY{p}{)}\PY{p}{)}
 \PY{n+nb}{print}\PY{p}{(}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{controllable system:}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{ss2tf}\PY{p}{(}\PY{n}{Ac}\PY{p}{,} \PY{n}{Bc}\PY{p}{,} \PY{n}{Cc}\PY{p}{,} \PY{n}{sym}\PY{o}{.}\PY{n}{Matrix}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{]}\PY{p}{)}\PY{p}{)}\PY{p}{)}
@@ -994,23 +1143,27 @@ controllable system:
 
     \end{Verbatim}
 
-\subsubsection{Conclusion for Part II}\label{conclusion-for-part-ii}
+\subsection{Conclusion for Part II}\label{conclusion-for-part-ii}
 
 We can verify that the above transfer functions are the not quite exact,
-but almost exact. We can confirm that we have found the controllable
-form out of the uncontrollable form for the system using the kalman
-Decomposition.
+but almost exact. All the additive values in the uncontrollable matrix
+are very small, \$10\^{}\{-17\} \$ or \(10^{-16}\).
 
-\subsection{Part III}\label{part-iii}
+We can confirm that we have found the controllable form out of the
+uncontrollable form for the system using the Kalman Decomposition.
 
-    \textbf{Set the parameters to create an ``unstable'' system. Use
-``constant gain negative state-feedback'' to make the system stable.}
+\section{Part III}\label{part-iii}
+
+    \textbf{\emph{Set the parameters to create an ``unstable'' system. Use
+``constant gain negative state-feedback'' to make the system stable.}}
 
 We will use the same parameters as we used in the first part to check
-for stability and generate the needed gains
+for stability and generate the needed gains. The following code will
+apply values to the parameter variables and then define the matrices
+from the system.
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{16}{\boxspacing}
+\prompt{In}{incolor}{23}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{m} \PY{o}{=} \PY{l+m+mi}{1}     \PY{c+c1}{\PYZsh{} mass of the pendulum.}
 \PY{n}{M} \PY{o}{=} \PY{l+m+mi}{2}     \PY{c+c1}{\PYZsh{} mass of the cart.}
@@ -1020,7 +1173,7 @@ for stability and generate the needed gains
 \end{tcolorbox}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{17}{\boxspacing}
+\prompt{In}{incolor}{24}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{A} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{p}{(}\PY{n}{m}\PY{o}{*}\PY{n}{g}\PY{p}{)}\PY{o}{/}\PY{n}{M}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{,}\PY{p}{(}\PY{n}{M}\PY{o}{+}\PY{n}{m}\PY{p}{)}\PY{o}{*}\PY{n}{g}\PY{o}{/}\PY{p}{(}\PY{n}{M}\PY{o}{*}\PY{n}{l}\PY{p}{)}\PY{p}{,}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{]}\PY{p}{)}
 \PY{n}{B} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{array}\PY{p}{(}\PY{p}{[}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{1}\PY{o}{/}\PY{n}{M}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{]}\PY{p}{,}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{o}{/}\PY{p}{(}\PY{n}{M}\PY{o}{*}\PY{n}{l}\PY{p}{)}\PY{p}{]}\PY{p}{]}\PY{p}{)}
@@ -1029,25 +1182,25 @@ for stability and generate the needed gains
 \end{Verbatim}
 \end{tcolorbox}
 
-\subsubsection{Root-locus}\label{root-locus}
+\subsection{Eigen values of the system}\label{eigen-values-of-the-system}
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{18}{\boxspacing}
+\prompt{In}{incolor}{25}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{sys\PYZus{}y} \PY{o}{=} \PY{n}{ss}\PY{p}{(}\PY{n}{A}\PY{p}{,}\PY{n}{B}\PY{p}{,}\PY{n}{C}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{D}\PY{p}{)}
-\PY{n}{r} \PY{o}{=} \PY{n}{rlocus}\PY{p}{(}\PY{n}{sys\PYZus{}y}\PY{p}{,}\PY{n}{xlim}\PY{o}{=}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{10}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{]}\PY{p}{,}\PY{n}{ylim}\PY{o}{=}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{]}\PY{p}{)}
+\PY{n}{r} \PY{o}{=} \PY{n}{pzmap}\PY{p}{(}\PY{n}{sys\PYZus{}y}\PY{p}{,}\PY{n}{xlim}\PY{o}{=}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{10}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{]}\PY{p}{,}\PY{n}{ylim}\PY{o}{=}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{20}\PY{p}{,}\PY{l+m+mi}{20}\PY{p}{]}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_38_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_54_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
     As can be seen, there are poles on the left half plane. Thus the system
 is unstable.
 
-\subsubsection{Pole Placement using
+\subsection{Pole Placement using
 Matlab}\label{pole-placement-using-matlab}
 
 Let us arbritrarily pick 4 poles such that the system can be made stable
@@ -1055,7 +1208,7 @@ for some forward gain. Let the chosen poles be at (-5±0.5j) and (-6±1j).
 These poles are fast enough to get us a settling time of \(\lt 0.5\)s
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{19}{\boxspacing}
+\prompt{In}{incolor}{26}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{poles} \PY{o}{=} \PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{o}{+}\PY{l+m+mf}{0.5}\PY{n}{j}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{5}\PY{o}{\PYZhy{}}\PY{l+m+mf}{0.5}\PY{n}{j}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{6}\PY{o}{\PYZhy{}}\PY{l+m+mi}{1}\PY{n}{j}\PY{p}{,}\PY{o}{\PYZhy{}}\PY{l+m+mi}{6}\PY{o}{+}\PY{l+m+mi}{1}\PY{n}{j}\PY{p}{]}
 \PY{n}{k} \PY{o}{=} \PY{n}{place}\PY{p}{(}\PY{n}{A}\PY{p}{,}\PY{n}{B}\PY{p}{,}\PY{n}{poles}\PY{p}{)}
@@ -1067,7 +1220,7 @@ These poles are fast enough to get us a settling time of \(\lt 0.5\)s
 [[ -95.23445464  -68.60346585 -259.29722732  -56.30173293]]
     \end{Verbatim}
 
-\subsubsection{Pole Placement using Ackermann's
+\subsection{Pole Placement using Ackermann's
 formula}\label{pole-placement-using-ackermanns-formula}
 
 Ackermann's formula can be used to easily place poles. The formula is
@@ -1079,7 +1232,7 @@ Where, \(\Delta_d\) is the characteristic equation obtained from the
 desired eigen values
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{20}{\boxspacing}
+\prompt{In}{incolor}{27}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{c+c1}{\PYZsh{} Calculate same gains using Ackermann\PYZsq{}s formula}
 \PY{n}{det\PYZus{}new} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{identity}\PY{p}{(}\PY{l+m+mi}{4}\PY{p}{)}
@@ -1096,75 +1249,85 @@ desired eigen values
 [[ -95.23445464  -68.60346585 -259.29722732  -56.30173293]]
     \end{Verbatim}
 
-\subsection{Part IV}\label{part-iv}
+\section{Part IV}\label{part-iv}
 
 We can plot the step responses of the the system's outputs, the tilt
-angle and the \(y\) displacement.
+angle, \(\theta\) and the cart's displacement, \(y\).
 
-\subsubsection{Step response}\label{step-response}
+\subsection{Step response}\label{step-response}
 
-The state space equations for the new system are given by: 
-\[
-    \dot{x} = (A-Bk)x+Bu 
-\]
-\[
+The state space equations for the new system are given by: \[
+	\dot{x} = (A-Bk)x + Br\]\[
     y = Cx + Du
 \]
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{21}{\boxspacing}
+\prompt{In}{incolor}{28}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
-\PY{n}{Afb} \PY{o}{=} \PY{p}{(}\PY{n}{A}\PY{o}{\PYZhy{}}\PY{n}{np}\PY{o}{.}\PY{n}{matmul}\PY{p}{(}\PY{n}{B}\PY{p}{,}\PY{n}{k\PYZus{}ack}\PY{p}{)}\PY{p}{)}
+\PY{k}{def} \PY{n+nf}{plot\PYZus{}step}\PY{p}{(}\PY{p}{)}\PY{p}{:}
+    \PY{n}{T} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{,}\PY{l+m+mf}{0.05}\PY{p}{)}    \PY{c+c1}{\PYZsh{} Time range against which the step response is shown}
+    \PY{n}{fig}\PY{p}{,} \PY{n}{ax1} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{p}{)}
+    \PY{n}{ax2} \PY{o}{=} \PY{n}{ax1}\PY{o}{.}\PY{n}{twinx}\PY{p}{(}\PY{p}{)}           \PY{c+c1}{\PYZsh{} Get plot axes}
 
-\PY{n}{sysfb\PYZus{}y} \PY{o}{=} \PY{n}{ss}\PY{p}{(}\PY{n}{Afb}\PY{p}{,}\PY{n}{B}\PY{p}{,}\PY{n}{C}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{D}\PY{p}{)}
-\PY{n}{sysfb\PYZus{}angle} \PY{o}{=} \PY{n}{ss}\PY{p}{(}\PY{n}{Afb}\PY{p}{,}\PY{n}{B}\PY{p}{,}\PY{n}{C}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,}\PY{n}{D}\PY{p}{)}
+    \PY{n}{y}\PY{p}{,}\PY{n}{T}\PY{o}{=}\PY{n}{step}\PY{p}{(}\PY{n}{sysfb\PYZus{}y}\PY{p}{,}\PY{n}{T}\PY{p}{)}         \PY{c+c1}{\PYZsh{} Generate step response of the displacement}
+    \PY{n}{p} \PY{o}{=} \PY{n}{ax1}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{T}\PY{p}{,}\PY{n}{y}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{b\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 
-\PY{n}{T} \PY{o}{=} \PY{n}{np}\PY{o}{.}\PY{n}{arange}\PY{p}{(}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{,}\PY{l+m+mf}{0.05}\PY{p}{)}
+    \PY{n}{y}\PY{p}{,}\PY{n}{T} \PY{o}{=} \PY{n}{step}\PY{p}{(}\PY{n}{sysfb\PYZus{}angle}\PY{p}{,}\PY{n}{T}\PY{p}{)}   \PY{c+c1}{\PYZsh{} Generate step response of the tilt angle}
+    \PY{n}{p} \PY{o}{=} \PY{n}{ax2}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{T}\PY{p}{,}\PY{n}{y}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{g\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
 
-\PY{n}{fig}\PY{p}{,} \PY{n}{ax1} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{subplots}\PY{p}{(}\PY{p}{)}
-\PY{n}{ax2} \PY{o}{=} \PY{n}{ax1}\PY{o}{.}\PY{n}{twinx}\PY{p}{(}\PY{p}{)}
+    \PY{c+c1}{\PYZsh{} Make the plot look pretty}
+    \PY{n}{e} \PY{o}{=} \PY{n}{ax1}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{p}{)}
+    \PY{n}{e} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{xlim}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{]}\PY{p}{)}
+    \PY{n}{e} \PY{o}{=} \PY{n}{ax1}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Cart Position (m)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \PY{n}{e} \PY{o}{=} \PY{n}{ax2}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pendulum angle (rads)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \PY{n}{e} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Time (s)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \PY{n}{e} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Inverted Pedulum step response}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \PY{n}{e} \PY{o}{=} \PY{n}{fig}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Cart Position}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pendulum Position}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{loc}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{upper right}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{bbox\PYZus{}to\PYZus{}anchor}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \PY{n}{bbox\PYZus{}transform}\PY{o}{=}\PY{n}{ax1}\PY{o}{.}\PY{n}{transAxes}\PY{p}{)}
 
-\PY{n}{y}\PY{p}{,}\PY{n}{T}\PY{o}{=}\PY{n}{step}\PY{p}{(}\PY{n}{sysfb\PYZus{}y}\PY{p}{,}\PY{n}{T}\PY{p}{)}
-\PY{n}{p} \PY{o}{=} \PY{n}{ax1}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{T}\PY{p}{,}\PY{n}{y}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{b\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+\end{Verbatim}
+\end{tcolorbox}
 
-\PY{n}{y}\PY{p}{,}\PY{n}{T} \PY{o}{=} \PY{n}{step}\PY{p}{(}\PY{n}{sysfb\PYZus{}angle}\PY{p}{,}\PY{n}{T}\PY{p}{)}
-\PY{n}{p} \PY{o}{=} \PY{n}{ax2}\PY{o}{.}\PY{n}{plot}\PY{p}{(}\PY{n}{T}\PY{p}{,}\PY{n}{y}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{g\PYZhy{}}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{29}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{Afb} \PY{o}{=} \PY{p}{(}\PY{n}{A}\PY{o}{\PYZhy{}}\PY{n}{np}\PY{o}{.}\PY{n}{matmul}\PY{p}{(}\PY{n}{B}\PY{p}{,}\PY{n}{k\PYZus{}ack}\PY{p}{)}\PY{p}{)}  \PY{c+c1}{\PYZsh{} Define the new A matrix}
 
-\PY{n}{e} \PY{o}{=} \PY{n}{ax1}\PY{o}{.}\PY{n}{grid}\PY{p}{(}\PY{p}{)}
-\PY{n}{e} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{xlim}\PY{p}{(}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{]}\PY{p}{)}
-\PY{n}{e} \PY{o}{=} \PY{n}{ax1}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Cart Position (m)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{e} \PY{o}{=} \PY{n}{ax2}\PY{o}{.}\PY{n}{set\PYZus{}ylabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pendulum angle (rads)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{e} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{xlabel}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Time (s)}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{e} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{title}\PY{p}{(}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Inverted Pedulum step response}\PY{l+s+s1}{\PYZsq{}}\PY{p}{)}
-\PY{n}{e} \PY{o}{=} \PY{n}{fig}\PY{o}{.}\PY{n}{legend}\PY{p}{(}\PY{p}{[}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Cart Position}\PY{l+s+s1}{\PYZsq{}}\PY{p}{,}\PY{l+s+s1}{\PYZsq{}}\PY{l+s+s1}{Pendulum Position}\PY{l+s+s1}{\PYZsq{}}\PY{p}{]}\PY{p}{,}\PY{n}{loc}\PY{o}{=}\PY{l+s+s2}{\PYZdq{}}\PY{l+s+s2}{upper right}\PY{l+s+s2}{\PYZdq{}}\PY{p}{,} \PY{n}{bbox\PYZus{}to\PYZus{}anchor}\PY{o}{=}\PY{p}{(}\PY{l+m+mi}{1}\PY{p}{,}\PY{l+m+mi}{1}\PY{p}{)}\PY{p}{,} \PY{n}{bbox\PYZus{}transform}\PY{o}{=}\PY{n}{ax1}\PY{o}{.}\PY{n}{transAxes}\PY{p}{)}
+\PY{n}{sysfb\PYZus{}y} \PY{o}{=} \PY{n}{ss}\PY{p}{(}\PY{n}{Afb}\PY{p}{,}\PY{n}{B}\PY{p}{,}\PY{n}{C}\PY{p}{[}\PY{l+m+mi}{0}\PY{p}{:}\PY{l+m+mi}{1}\PY{p}{]}\PY{p}{,}\PY{n}{D}\PY{p}{)}  \PY{c+c1}{\PYZsh{} Setup the new statespace equation with 1 column of the C matrix}
+\PY{n}{sysfb\PYZus{}angle} \PY{o}{=} \PY{n}{ss}\PY{p}{(}\PY{n}{Afb}\PY{p}{,}\PY{n}{B}\PY{p}{,}\PY{n}{C}\PY{p}{[}\PY{l+m+mi}{1}\PY{p}{:}\PY{p}{]}\PY{p}{,}\PY{n}{D}\PY{p}{)} \PY{c+c1}{\PYZsh{} Setup the new statespace equation with the 2nd column of the C matrix}
+\end{Verbatim}
+\end{tcolorbox}
 
-\PY{n}{plt}\PY{o}{.}\PY{n}{show}\PY{p}{(}\PY{p}{)}
+    \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
+\prompt{In}{incolor}{30}{\boxspacing}
+\begin{Verbatim}[commandchars=\\\{\}]
+\PY{n}{plot\PYZus{}step}\PY{p}{(}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_46_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_64_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
-\subsubsection{Rootlocus of the desired
-system}\label{rootlocus-of-the-desired-system}
+\subsection{Pole-Zero map of the desired
+system}\label{pole-zero-map-of-the-desired-system}
 
-    We can have a look at the root locus again to make sure that the poles
-ended up where we wanted them. Now the system is stable for some forward
-gain K
+    We can have a look at the pole zero map again to make sure that the
+poles ended up where we wanted them. Now the system is stable since all
+the eigen values lie in the left half plane
 
     \begin{tcolorbox}[breakable, size=fbox, boxrule=1pt, pad at break*=1mm,colback=cellbackground, colframe=cellborder]
-\prompt{In}{incolor}{22}{\boxspacing}
+\prompt{In}{incolor}{32}{\boxspacing}
 \begin{Verbatim}[commandchars=\\\{\}]
 \PY{n}{fig} \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{figure}\PY{p}{(}\PY{p}{)}
-\PY{n}{ax}  \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{axes}\PY{p}{(}\PY{p}{)}
-\PY{n}{r}\PY{p}{,}\PY{n}{k} \PY{o}{=} \PY{n}{root\PYZus{}locus}\PY{p}{(}\PY{n}{sysfb\PYZus{}y}\PY{p}{,}\PY{n}{xlim}\PY{o}{=}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{10}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{n}{ylim}\PY{o}{=}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{10}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{]}\PY{p}{,}\PY{n}{ax}\PY{o}{=}\PY{n}{ax}\PY{p}{)}
+\PY{n}{axz}  \PY{o}{=} \PY{n}{plt}\PY{o}{.}\PY{n}{axes}\PY{p}{(}\PY{p}{)}
+\PY{n}{r}\PY{p}{,}\PY{n}{k} \PY{o}{=} \PY{n}{pzmap}\PY{p}{(}\PY{n}{sysfb\PYZus{}y}\PY{p}{,}\PY{n}{xlim}\PY{o}{=}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{10}\PY{p}{,}\PY{l+m+mi}{5}\PY{p}{]}\PY{p}{,}\PY{n}{ylim}\PY{o}{=}\PY{p}{[}\PY{o}{\PYZhy{}}\PY{l+m+mi}{10}\PY{p}{,}\PY{l+m+mi}{10}\PY{p}{]}\PY{p}{,}\PY{n}{ax}\PY{o}{=}\PY{n}{ax}\PY{p}{)}
 \end{Verbatim}
 \end{tcolorbox}
 
     \begin{center}
-    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_49_0.png}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{output_67_0.png}
     \end{center}
     { \hspace*{\fill} \\}
     
@@ -1182,6 +1345,12 @@ output is chosen to be either the angle of the pendulum from vertical,
 the rate of change of the angle or the velocity of the cart, the system
 becomes unobservable. On the other hand if the output is chosen to be
 the distance the cart has moved, the system is then controllable.
+
+To make the system unobservable with the given state space equation. We
+can choose the parameters of mass of the cart or pendulum or the length
+of the pendulum to be absurdly large. This makes the determinant of the
+square controllability matrix tend towards 0. This in turn makes the the
+Controllability and Observability matrix not have full rank.
 
 The inverted pendulum system is inherently unstable. The mass at the end
 of the pendulum will not stay upright on its own accord. This is
@@ -1204,7 +1373,6 @@ MATLAB and Simulink - Inverted Pendulum: System Modeling. {[}Online{]}.
 Available:
 https://ctms.engin.umich.edu/CTMS/index.php?example=InvertedPendulum§ion=SystemModeling.
 {[}Accessed: 24-Apr-2022{]}.
-
 
 
     % Add a bibliography block to the postdoc
